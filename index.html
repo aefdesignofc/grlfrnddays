@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Girlfriend Day!</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #ffe6f0, #ffe0ec);
+      color: #333;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
+      margin-top: 40px;
+      color: #e91e63;
+    }
+
+    p {
+      padding: 0 20px;
+      font-size: 1.1em;
+      line-height: 1.8;
+    }
+
+    .button {
+      background-color: #e91e63;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      margin-top: 20px;
+      font-size: 1em;
+      transition: background 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #c2185b;
+    }
+
+    audio {
+      margin-top: 20px;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+    }
+
+    /* Floating heart & flower animation */
+    .float-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    .float-item {
+      position: absolute;
+      top: 100%;
+      font-size: 2rem;
+      animation: floatUp 10s infinite ease-in;
+      opacity: 0.8;
+    }
+
+    .float-item:nth-child(1) { left: 10%; animation-delay: 0s; }
+    .float-item:nth-child(2) { left: 25%; animation-delay: 2s; }
+    .float-item:nth-child(3) { left: 40%; animation-delay: 4s; }
+    .float-item:nth-child(4) { left: 60%; animation-delay: 1s; }
+    .float-item:nth-child(5) { left: 75%; animation-delay: 3s; }
+    .float-item:nth-child(6) { left: 90%; animation-delay: 5s; }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.9;
+      }
+      50% {
+        transform: translateY(-50vh) scale(1.2);
+        opacity: 0.6;
+      }
+      100% {
+        transform: translateY(-100vh) scale(0.8);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1 data-aos="fade-down">Happy Girlfriend Day 💖</h1>
+
+  <p data-aos="fade-up">
+    i love you today, tomorrow and forever. thank you for being in my life, meeting you is something i never imagined before. 
+    i am so lucky to have uu. my happiness when i am with you i can't describe because you are one of the forms of happiness that i dream of. 
+    if you weren't the one i would never know that i deserve to be loved this well, my love for you is so great.
+    i hope you love me too and continue to maintain this love no matter how heavy the obstacles are ahead may god make our path easy
+
+  </p>
+
+  <button class="button" onclick="sayLove()">click here</button>
+
+  <!-- Musik -->
+  <audio controls autoplay loop>
+    <source src="music.mp3" type="audio/mp3">
+    Browser kamu tidak mendukung audio.
+  </audio>
+
+  <!-- Floating hearts and flowers -->
+  <div class="float-container">
+    <div class="float-item">💖</div>
+    <div class="float-item">🌸</div>
+    <div class="float-item">💗</div>
+    <div class="float-item">🌷</div>
+    <div class="float-item">💞</div>
+    <div class="float-item">🌹</div>
+  </div>
+
+  <!-- Script AOS dan JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    function sayLove() {
+      alert("terimakasih sudah menjadi bagian dalam hidupku, im always love you, and im here for uu if u need mee.");
+    }
+  </script>
+</body>
+</html>
